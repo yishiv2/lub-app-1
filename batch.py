@@ -87,7 +87,7 @@ def add_word_sets_for_week(num):
     today = datetime.now() + timedelta(days=1)
 
     # 1週間分の日付を使ってバッチ処理を行う
-    for i in range(20):
+    for i in range(7):
         date_for_set = today + timedelta(days=i)
         print(f"Creating word sets for: {date_for_set.strftime('%Y-%m-%d')}")
         add_word_sets(num=num, date_time=date_for_set)
