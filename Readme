@@ -1,0 +1,20 @@
+"""
+pipenv run python -c "from db import init_db; init_db()"
+"""
+
+"""
+pipenv run python batch.py
+"""
+
+
+"""
+pytest --cache-clear
+"""
+
+##起動
+"""
+pipenv run uvicorn main:app --reload
+"""
+"""
+pipenv run streamlit run streamlit_app.py
+"""

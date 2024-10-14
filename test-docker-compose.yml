@@ -1,0 +1,10 @@
+version: '3'
+services:
+  test_db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: test_user
+      POSTGRES_PASSWORD: test_password
+      POSTGRES_DB: test_db
+    ports:
+      - "5433:5432"  # ホストのポート5433をコンテナのポート5432にマッピング
